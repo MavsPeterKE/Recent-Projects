@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#E0E0E0"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical"
+     >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/stud_usernameshape" >
+
+        <TextView
+            android:id="@+id/lec_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Lecturer Name"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/lecname_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:background="@drawable/username_editshape"
+            android:ems="10" />
+        
+        <TextView
+            android:id="@+id/lec_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="95dp"
+            android:text="Department"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/lecdepartment_input"
+            android:layout_width="248dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/username_editshape" />
+        
+        <TextView
+            android:id="@+id/lec_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="175dp"
+            android:text="eMail"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/lec_email_input"
+            android:layout_width="248dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="210dp"
+            android:background="@drawable/username_editshape"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/lec_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="265dp"
+            android:text="Phone No"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/leccontact_input"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="295dp"
+            android:ems="10"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:maxLength="10"
+            android:background="@drawable/username_editshape"
+            android:inputType="phone" >
+
+            <requestFocus />
+        </EditText>
+        <TextView
+            android:id="@+id/lecpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="345dp"
+            android:text="Password"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/lecpassword_input"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="375dp"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="8"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/username_editshape"
+            android:inputType="textPassword" />
+
+         <TextView
+            android:id="@+id/lec_cpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="425dp"
+            android:text="Confirm Password"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/leccpassword_input"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="450dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/username_editshape"
+            android:maxLength="8"
+            android:inputType="textPassword" />
+        
+        <TextView
+            android:id="@+id/password_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="510dp"
+            android:text="No Password"
+            android:layout_marginLeft="20dp"
+            android:textColor="#0000FF"
+            android:textSize="20dp" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shapes"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Create Account" />
+     
+
+</LinearLayout></ScrollView>

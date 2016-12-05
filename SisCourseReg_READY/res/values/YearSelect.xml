@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <resources>
+        <item type="string" name="first_year">1st Year</item>
+        <item type="string" name="second_year">2nd Year</item>
+        <item type="string" name="third_year">3rd Year</item>
+        <item type="string" name="fourth_year">4th Year</item>
+    </resources>

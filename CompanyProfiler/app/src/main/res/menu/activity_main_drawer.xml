@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/info"
+            android:title="Overview" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/courier"
+            android:title="Courier Companies" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/fd"
+            android:title="Restaurants" />
+        <item
+            android:id="@+id/nav_edu"
+            android:icon="@drawable/education"
+            android:title="Educational Centers" />
+        <item
+            android:id="@+id/nav_collectors"
+            android:icon="@drawable/garbage"
+            android:title="Garbage Collectors" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/it"
+            android:title="Medical Services" />
+        <item
+        android:id="@+id/nav_insurance"
+        android:icon="@drawable/insurance"
+        android:title="Insurance" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/help"
+            android:title="Support" />
+    </group>
+
+    <item android:title=" Easy Search">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

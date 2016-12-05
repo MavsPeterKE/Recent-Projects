@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/postnewsshape"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E0E0E0"
+    android:orientation="vertical" >
+
+     <TextView
+            android:id="@+id/target_audience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Target Audience"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+     <Spinner
+         android:id="@+id/target_input"
+         android:layout_width="match_parent"
+         android:layout_height="41dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/username_editshape" />
+  <TextView
+            android:id="@+id/target_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Target Year"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+     <Spinner
+         android:id="@+id/targetyear_input"
+         android:layout_width="match_parent"
+         android:layout_height="41dp"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/username_editshape" />
+    <TextView
+            android:id="@+id/lec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Lecturer Name"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+<EditText
+            android:id="@+id/lecname_entered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:inputType="textPersonName"
+            android:layout_marginRight="20dp"
+            android:maxLength="20"
+            android:background="@drawable/username_editshape"
+            android:ems="10" />
+<TextView
+            android:id="@+id/news_posted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="News"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+<EditText
+    android:id="@+id/news_input"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:ems="10"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/username_editshape"
+    android:inputType="textMultiLine" >
+
+    <requestFocus />
+</EditText>
+
+    <Button
+        android:id="@+id/post_news"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#C0C0C0"
+        android:text="Post"
+        android:textColor="#000000"
+        android:onClick="action_post"
+        android:textStyle="bold" />
+
+    
+
+</LinearLayout>
+</ScrollView>

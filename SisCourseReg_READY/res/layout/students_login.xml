@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#E0E0E0"
+    android:layout_height="match_parent">
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="#E0E0E0"
+    android:orientation="vertical"
+     >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/stud_usernameshape"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="2dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:text="Reg No(e.g is_10_11)" />
+
+        <EditText
+            android:id="@+id/studuser_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:digits="i,f,m,s,_,1,2,3,4,5,6,7,8,9,0"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/username_editshape"
+            android:ems="10"
+            android:maxLength="10"
+            android:layout_marginBottom="15dp"
+            android:inputType="textPersonName"
+            android:textColor="#000000" >
+
+            <requestFocus />
+        </EditText>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/stud_password_shape"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="2dp"
+            android:text="Password"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        
+        <EditText
+            android:id="@+id/studpwd_input"
+            android:background="@drawable/password_editshape"
+            android:inputType="textPassword"
+            android:paddingTop="10dp" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:maxLength="8"
+            android:ems="10"
+            android:layout_marginBottom="15dp"
+            />
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/shapes"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:text="LOG IN" />
+      <TextView
+            android:id="@+id/student_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:textColor="#006600"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/create_account" />
+
+</LinearLayout></ScrollView>
