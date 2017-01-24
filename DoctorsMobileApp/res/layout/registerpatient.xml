@@ -1,0 +1,129 @@
+      <ScrollView 
+          xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+          android:background="#00CC66">
+      
+       <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/confirmvalue"
+        android:layout_alignTop="@+id/emailheader"
+        android:background="#00CC66"
+        android:orientation="vertical" >
+
+           <EditText
+               android:id="@+id/confirmvalue"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/rectangular"
+               android:ems="10"
+               android:hint="Full Names" />
+
+   
+        <RadioGroup 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+             <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00CC66"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" >
+        
+            <RadioButton
+                android:id="@+id/fmale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text="Female"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Male"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp" />
+     </RelativeLayout>
+        </RadioGroup>
+    
+
+    <TextView
+        android:id="@+id/Cancels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Date of Birth" />
+
+    <DatePicker
+        android:id="@+id/appointmentdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangular" />
+
+    <EditText
+        android:id="@+id/patientphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangular"
+        android:digits="1,2,3,4,5,6,7,8,9,0,A,B,C,D,E,F,G,H,I,K,J,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"
+        android:ems="10"
+        android:hint="Patient ID" />
+
+    <EditText
+        android:id="@+id/patientphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangular"
+        android:digits="1,2,3,4,5,6,7,8,9,0"
+        android:ems="10"
+        android:hint="Phone No" />
+
+    <EditText
+        android:id="@+id/postaladdress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangular"
+        android:digits="1,2,3,4,5,6,7,8,9,0"
+        android:ems="10"
+        android:hint="Postal Address" />
+
+    <Button
+        android:id="@+id/registerpatientButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonshape"
+        android:text="Submit" />
+        
+    </LinearLayout>
+    </ScrollView>

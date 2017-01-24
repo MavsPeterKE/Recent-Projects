@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00CC66">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="585dp"
+    android:background="@drawable/background2" >
+    
+     <RelativeLayout
+         android:id="@+id/app_anime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/circle"
+          android:layout_marginTop="10dp" >
+
+         <TextView
+             android:id="@+id/user_insights"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:textColor="#ffffff"
+             android:textSize="25sp"
+             android:textStyle="bold"
+             android:text="@string/insights" />
+         
+      </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/eventscomponent"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/function1shape" >
+
+        <TextView
+            android:id="@+id/events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/Events" />
+
+         <TextView
+             android:id="@+id/events_towns"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/events"
+             android:layout_alignBottom="@+id/events"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="20dp"
+             android:text="@string/events_anime"
+             android:textColor="#00CC66"
+             android:textSize="20sp"
+             android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:id="@+id/newscomponents"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="265dp"
+        android:background="@drawable/function1shape" >
+        <TextView
+            android:id="@+id/news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/News" />
+
+        <TextView
+            android:id="@+id/news_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/news"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/news_anime"
+            android:textColor="#00CC66"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:id="@+id/jobscomponent"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="365dp"
+        android:background="@drawable/function1shape" >
+        <TextView
+            android:id="@+id/jobs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/jobs" />
+
+        <TextView
+            android:id="@+id/job_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/jobs"
+            android:layout_alignBottom="@+id/jobs"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/internships"
+            android:textColor="#00CC66"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:id="@+id/personalcomponent"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="465dp"
+        android:background="@drawable/function1shape" >
+        <TextView
+            android:id="@+id/personalize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/personals" />
+
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

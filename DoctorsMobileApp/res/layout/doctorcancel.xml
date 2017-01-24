@@ -1,0 +1,202 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#00CC66">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00CC66"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/bdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="DATE"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Select Slot To Confirm"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <Switch
+                android:id="@+id/Switchd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:text="Slot A"
+                android:textColor="#00CC66"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/slota"
+                android:layout_alignLeft="@+id/slotatext"
+                android:text="10.00-11.00am"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView01"
+                android:layout_alignTop="@+id/Switch02"
+                android:text="5.00-6.00pm"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/slota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/slotatext"
+                android:layout_marginTop="16dp"
+                android:background="#ffffff"
+                android:text="Slot B"
+                android:textColor="#00CC66"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/Switch02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Switch03"
+                android:layout_marginTop="18dp"
+                android:background="#ffffff"
+                android:text="Slot D"
+                android:textColor="#00CC66"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Switch03"
+                android:layout_alignBottom="@+id/Switch03"
+                android:layout_alignLeft="@+id/TextView01"
+                android:text="2.00-4.00pm"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/slotatext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/Switchd1"
+                android:layout_alignBottom="@+id/Switchd1"
+                android:layout_marginLeft="32dp"
+                android:layout_toRightOf="@+id/Switchd1"
+                android:text="8.00-10.00am"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/Switch03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/slota"
+                android:layout_marginTop="14dp"
+                android:layout_toLeftOf="@+id/slotatext"
+                android:background="#ffffff"
+                android:text="Slot C"
+                android:textColor="#00CC66"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="23dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/cancelwhole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Cancel All Bookings"
+            android:textColor="#ffffff" />
+
+        <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom Select Cancellationl"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp" />
+
+        <ListView
+            android:id="@+id/slot2list"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:choiceMode="multipleChoice"
+            android:layout_weight="1.46"
+            android:background="#ffffff" >
+        </ListView>
+
+        <Button
+            android:id="@+id/submitconfirmButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.20"
+            android:background="@drawable/buttonshape"
+            android:text="Submit Cancellations" />
+
+    </LinearLayout>
+ 
+</ScrollView>

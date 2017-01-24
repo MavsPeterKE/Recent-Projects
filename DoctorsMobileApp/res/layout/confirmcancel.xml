@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#00CC66" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#00CC66"
+        android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/confirmrefine"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangular"
+        android:drawableLeft="@drawable/search1"
+        android:ems="10"
+        android:hint="Patient ID/Date"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/fine2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cancelled" />
+
+        <ImageView
+            android:id="@+id/fine24"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42dp"
+            android:src="@drawable/confirmedapps" />
+
+        <TextView
+            android:id="@+id/Cancels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fine24"
+            android:textColor="#00CC66"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:text="Confirmed" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/fine2"
+            android:textColor="#00CC66"
+            android:textSize="15sp"
+            android:text="Cancelled" />
+
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/slot2list"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:layout_height="230dp" >
+            </ListView>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+ 
+</ScrollView>

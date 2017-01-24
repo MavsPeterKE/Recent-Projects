@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00CC66" >
+   
+
+<LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="100dp"
+        android:layout_height="260dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="72dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/home_icon" />
+
+        <ImageView
+            android:id="@+id/doctor_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/search_icon" />
+
+        <ImageView
+            android:id="@+id/doctor_pending"
+            android:layout_width="84dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/book_appointments" />
+
+        <ImageView
+            android:id="@+id/doctor_cancel"
+            android:layout_width="72dp"
+            android:layout_height="89dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/confirmed" />
+
+        <ImageView
+            android:id="@+id/fine_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/fined" />
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/diary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_text"
+        android:layout_below="@+id/search_text"
+        android:layout_marginTop="40dp"
+        android:text="Book Slot"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/search_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/home_text"
+        android:layout_below="@+id/home_text"
+        android:layout_marginTop="42dp"
+        android:text="Search Patient"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pending_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/diary_text"
+        android:layout_below="@+id/diary_text"
+        android:layout_marginTop="47dp"
+        android:text="Confirm Slots"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cancel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pending_text"
+        android:layout_below="@+id/pending_text"
+        android:layout_marginTop="43dp"
+        android:text="Fines"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    
+
+     <LinearLayout
+         android:id="@+id/search_section"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:layout_alignParentBottom="true"
+         android:layout_alignRight="@+id/search_section"
+         android:layout_below="@+id/search_text"
+         android:visibility="invisible"
+         android:layout_marginLeft="2dp"
+         android:layout_marginRight="5dp"
+         android:layout_toRightOf="@+id/linearLayout1"
+         android:background="#ffffff"
+         android:layout_marginBottom="5dp"
+         android:orientation="vertical" >
+
+         <ListView
+             android:id="@+id/searchresults"
+             android:layout_width="match_parent"
+             android:background="#00CC66"
+             android:divider="#000000"
+             
+             android:layout_height="match_parent" >
+         </ListView>
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/searchlayout"
+         android:layout_width="200dp"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/diary_text"
+         android:layout_alignLeft="@+id/search_section"
+         android:layout_alignRight="@+id/search_section"
+         android:background="#ffffff"
+         android:visibility="invisible" >
+
+         <EditText
+             android:id="@+id/searchkey"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_margin="5dp"
+             android:layout_weight="0.10"
+             android:hint="Patient ID"
+             android:background="@drawable/rectangular"
+             android:ems="10"
+             android:visibility="invisible" >
+
+             <requestFocus />
+         </EditText>
+
+     </LinearLayout>
+
+     <TextView
+         android:id="@+id/home_text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/searchlayout"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="16dp"
+         android:layout_marginTop="52dp"
+         android:text="Register Patient"
+         android:textColor="#ffffff"
+         android:textSize="25sp"
+         android:textStyle="bold" />
+  
+
+</RelativeLayout>

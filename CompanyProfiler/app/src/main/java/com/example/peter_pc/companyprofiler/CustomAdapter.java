@@ -27,7 +27,7 @@ public class CustomAdapter extends BaseAdapter {
     }
     @Override
     public Object getItem(int position) {
-        return data.get(position);// get the actual movie
+        return data.get(position);// get the actual data position
     }
     @Override
     public long getItemId(int id) {
@@ -40,9 +40,9 @@ public class CustomAdapter extends BaseAdapter {
             LayoutInflater inflater = ((Activity) mContext).getLayoutInflater();
             convertView = inflater.inflate(R.layout.list_item_layout, parent,false);//modify here
             viewHolder = new ViewHolder();
-            viewHolder.tvName = (TextView) convertView.findViewById(R.id.tvName);//modify here
-            viewHolder.tvEmail = (TextView) convertView.findViewById(R.id.tvEmail);//modify here
-            viewHolder.tvPhone = (TextView) convertView.findViewById(R.id.tvPhone);//modify here
+            viewHolder.tvName = (TextView) convertView.findViewById(R.id.tvNames);//modify here
+            viewHolder.tvEmail = (TextView) convertView.findViewById(R.id.tvEmails);//modify here
+            viewHolder.tvPhone = (TextView) convertView.findViewById(R.id.tvPhones);//modify here
             viewHolder.tvLocation = (TextView) convertView.findViewById(R.id.tvLocation);//modify here
             viewHolder.imgMain = (ImageView) convertView.findViewById(R.id.imgMain);//modify here
             convertView.setTag(viewHolder);

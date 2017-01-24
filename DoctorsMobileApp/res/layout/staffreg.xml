@@ -1,0 +1,114 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#00CC66" >
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="473dp"
+    android:background="#00CC66" >
+
+    <TextView
+        android:id="@+id/home_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/staffno"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:text="StaffNo"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/staffno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_text"
+        android:background="@drawable/rectangular"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/emailheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/staffno"
+        android:layout_below="@+id/staffno"
+        android:layout_marginTop="23dp"
+        android:text="email Address"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/confirmvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailheader"
+        android:background="@drawable/rectangular"
+        android:layout_below="@+id/emailheader"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confirmvalue"
+        android:layout_below="@+id/confirmvalue"
+        android:layout_marginTop="18dp"
+        android:text="Password"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:background="@drawable/rectangular"
+        android:layout_marginTop="18dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp"
+        android:text="Confirm Password" />
+
+    <EditText
+        android:id="@+id/cpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:background="@drawable/rectangular"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/registerpatientButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cpass"
+        android:layout_alignRight="@+id/cpass"
+        android:layout_below="@+id/cpass"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/buttonshape"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/passmatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cpass"
+        android:textColor="#FF0000"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/home_text"
+        android:text="TextView" />
+
+</RelativeLayout>
+</ScrollView>
