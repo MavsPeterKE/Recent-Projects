@@ -16,7 +16,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
-	
+	//Your Input holders fiels
 	EditText fname,lname,mname;
 	Button save;
 
@@ -34,8 +34,8 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0)
 			{
-				// TODO Auto-generated method stub
 				
+				//gets the user input
 				String a=fname.getText().toString();
 				String b=mname.getText().toString();
 				String c=lname.getText().toString();
@@ -43,20 +43,23 @@ public class MainActivity extends Activity {
 			   //Object that will make request to the server
 				AsyncHttpClient client=new AsyncHttpClient();
 				
-				//Object to request parameters that will be sent to the server
+				/*map your input values collecteed from the user associating each with a keywork that 
+				shall be received by your script interacting with the database, in ths case php script*/
 				RequestParams params=new RequestParams();
 				params.put("fname", a);
 				params.put("mname", b); 
 				params.put("lname", c);
 				
+				//the post client that receive your script url as a parameter ,the params you had fed and the response handler
 				client.post("http://10.0.2.2",params, new AsyncHttpResponseHandler() {
 					
 					@Override
 					public void onSuccess(int arg0, Header[] arg1, byte[] response) 
 					{
-						// TODO Auto-generated method stub
+						// Converts the response from byte to string
 						String serverresponse=new String(response);
 						
+						//Receives the response from your script and execute an action in java
 						if(serverresponse.equals("3")){
 							Toast.makeText(getApplicationContext(),"All Details Required",Toast.LENGTH_LONG).show();
 						}else if(serverresponse.equals("2")){
@@ -73,7 +76,6 @@ public class MainActivity extends Activity {
 					
 					@Override
 					public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
-						// TODO Auto-generated method stub
 						Toast.makeText(getApplicationContext(),"Unable to access server",Toast.LENGTH_LONG).show();
 						
 					}
