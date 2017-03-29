@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
 				params.put("lname", c);
 				
 				//the post client that receive your script url as a parameter ,the params you had fed and the response handler
-				client.post("http://10.0.2.2",params, new AsyncHttpResponseHandler() {
+				client.post("http://10.0.2.2/projects/savedate.php",params, new AsyncHttpResponseHandler() {
 					
 					@Override
 					public void onSuccess(int arg0, Header[] arg1, byte[] response) 
